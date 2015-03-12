@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PromiseKitViewContoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeN-8a-jfY">
+                                <rect key="frame" x="272" y="285" width="56" height="30"/>
+                                <state key="normal" title="Promise">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="show" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q6o-27-phD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="QeN-8a-jfY" secondAttribute="centerY" id="PZL-Xf-tLO"/>
+                            <constraint firstAttribute="centerX" secondItem="QeN-8a-jfY" secondAttribute="centerX" id="xtb-fH-Qd0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Promise View Controller-->
+        <scene sceneID="FL1-vf-iIF">
+            <objects>
+                <viewController restorationIdentifier="PromiseViewController" storyboardIdentifier="PromiseViewController" id="U8A-dy-vhx" customClass="PromiseViewController" customModule="PromiseKitViewContoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BHb-jE-mmA"/>
+                        <viewControllerLayoutGuide type="bottom" id="4pf-Ta-283"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Unv-hW-oZW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTp-MG-7TN">
+                                <rect key="frame" x="282" y="245" width="36" height="30"/>
+                                <state key="normal" title="Fulfill">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionFulfill" destination="U8A-dy-vhx" eventType="touchUpInside" id="RL8-Q9-ggF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEi-rt-NqF">
+                                <rect key="frame" x="278" y="285" width="44" height="30"/>
+                                <state key="normal" title="Reject">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionReject" destination="U8A-dy-vhx" eventType="touchUpInside" id="WgC-uc-D3M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="YEi-rt-NqF" secondAttribute="centerY" id="D0y-Of-j3k"/>
+                            <constraint firstAttribute="centerX" secondItem="QTp-MG-7TN" secondAttribute="centerX" id="T6z-1A-nRr"/>
+                            <constraint firstAttribute="centerX" secondItem="YEi-rt-NqF" secondAttribute="centerX" id="Tu2-ey-e11"/>
+                            <constraint firstAttribute="centerY" secondItem="QTp-MG-7TN" secondAttribute="centerY" constant="40" id="YKU-hd-6bo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kib-ku-SGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="322"/>
+        </scene>
+    </scenes>
+</document>
